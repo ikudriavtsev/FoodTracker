@@ -82,7 +82,7 @@ class MealTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 
@@ -92,7 +92,6 @@ class MealTableViewController: UITableViewController {
 
     }
     */
-
     /*
     // Override to support conditional rearranging of the table view.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
@@ -110,5 +109,14 @@ class MealTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
+
+    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
+        if let source = sender.source as? MealViewController,
+            let meal = source.meal {
+            // Add a new meal.
+            let newIndexPath = NSIndexPath(row: meals.count, section: 0)
+            meals.append(meal)
+            tableView.insertRows(at: [newIndexPath as IndexPath], with: .bottom)
+        }
+    }
 }
