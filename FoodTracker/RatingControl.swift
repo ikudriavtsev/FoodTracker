@@ -47,6 +47,7 @@ class RatingControl: UIView {
         for (index, button) in ratingButtons.enumerated() {
             buttonFrame.origin.x = CGFloat(index * (buttonSize + spacing))
             button.frame = buttonFrame
+            button.isSelected = index < rating
         }
     }
 
