@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		655572351E069E7700AD0996 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		655926391DE43282001B61EC /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6559263C1DE43282001B61EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6559263E1DE43282001B61EC /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		655926301DE43282001B61EC = {
 			isa = PBXGroup;
 			children = (
+				655572351E069E7700AD0996 /* LICENSE */,
 				65D5B3381DFD82F10004FE73 /* README.md */,
 				6559263B1DE43282001B61EC /* FoodTracker */,
 				655926501DE43282001B61EC /* FoodTrackerTests */,
